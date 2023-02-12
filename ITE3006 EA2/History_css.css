@@ -1,0 +1,12 @@
+#container{
+	background-color: aqua;
+	color: green;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#body{
+	  background-image: url("seisun.png");
+	  background-repeat: repeat;
+}
+	  

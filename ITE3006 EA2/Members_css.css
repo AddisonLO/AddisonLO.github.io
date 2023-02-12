@@ -1,0 +1,8 @@
+#body{
+	  color: white;
+}
+#photo{
+       background-image: url("members.png");
+	   background-repeat: no-repeat;
+	   background-attachment: fixed;
+}

@@ -1,0 +1,41 @@
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="form_css.css">
+   <title>club joining form</title>
+</head>
+<script type="text/javascript" src="matching.js">
+</script>
+<body id="body">
+   <form method="post" enctype="multipart/form-data">
+    <fieldset>
+      Name: <input type="text" id="username" required="required" />
+	  </br>
+	  Password: <input type="password" id="New_password" required="required" pattern="^[0-9]{10}" />
+	  </br>
+	  Confirm Password:<input type="password" id="Confirm_password" required="required" pattern="^[0-9]{10}" />
+	  </br>
+	  Email: <input type="email" name="email" required="required" />
+      </br>	  
+	  Gender:
+	  <input type="radio" id="GenderFemale" value="M" required="required" />Male
+	  <input type="radio" id="GenderMale" value="F" required="required" />Female
+	  </br>
+	  Country:
+	  <select required="required">
+	     <optgroup label="Country">
+		    <option>Japanese</option>
+			<option>Chinese</option>
+		 </optgroup>
+	  </select>
+	  other<input type="text" name="other" />
+	</fieldset>
+	<input type="submit" value="Send From" onclick="match()"/>
+	<input type="reset" value="Clear Form" />
+   </form>
+   
+   <p id="ohisama" align="center">Welcome ohisama!^^</p>
+   
+
+</body>
+</html>
+	  

@@ -1,0 +1,16 @@
+#body{
+	  background-color: aqua;
+}
+#ohisama{
+	     width: 900px;
+		 height: 266px;
+		 color: white;
+		 border-radius: 25px;
+		 background: url(fanclub_joining.png);
+		 background-repeat: no-repeat;
+		 
+}
+#ohisama:first-line{
+	                color: white;
+					font-size: xx-large;
+}
