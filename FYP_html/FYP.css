@@ -27,7 +27,7 @@
 /* add background color of the top menu hot bar */ 
 .navigation{
   overflow: hidden;
-  background-color: #333;
+  background-color: ;
 }
 /* modify the links of the hotbar */
 .navigation a {
@@ -40,12 +40,12 @@
 }
 /* change the color of the links */
 .navigation a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 /* add color of the current link */
 .navigation a.current {
-  background-color: #04AA6D;
+  background-color: red;
   color: white;
 }
 	
