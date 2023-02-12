@@ -45,7 +45,7 @@
 }
 /* add color of the current link */
 .navigation a.current {
-  background-color: red;
+  background-color: green;
   color: white;
 }
 	
