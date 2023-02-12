@@ -12,9 +12,7 @@
 }
 /*set background image */
 #body{
-    background-image: url("prediction_cloud.JPG");
-    width: 200%;
-    height: 200%;
+    background-image: url("prediction_cloud.jpg");
 }
 /* set the color of the text at the left side */
 #prediction_left{
