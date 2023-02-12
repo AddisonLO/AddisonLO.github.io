@@ -27,12 +27,12 @@
 /* add background color of the top menu hot bar */ 
 .navigation{
   overflow: hidden;
-  background-color: ;
+  background-color: red ;
 }
 /* modify the links of the hotbar */
 .navigation a {
   float: left;
-  color: #f2f2f2;
+  color: red;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
