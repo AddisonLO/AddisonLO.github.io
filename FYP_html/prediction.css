@@ -1,14 +1,14 @@
 /* the stat of the road prediction iframe */
 #road_prediction{
         display:inline-block;
-		width: 600px;
-		height: 350px;
+		width: 800px;
+		height: 550px;
 }
 /* the stat of the normal prediction iframe */
 #general_prediction{
 	display:inline-block;
-	width: 600px;
-    height: 350px;
+	width: 800px;
+    height: 550px;
 }
 /*set background image */
 #body{
