@@ -5,7 +5,7 @@
 		height: 350px;
 }
 /* the stat of the normal prediction iframe */
-#normal_prediction{
+#general_prediction{
 	display:inline-block;
 	width: 600px;
     height: 350px;
