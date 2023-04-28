@@ -10,10 +10,30 @@
 			 cursor: pointer;
 }
 			 
-#body{
-	  background-color: aqua;
-	  color: black;
+#loop_image {
+	height: 100vh; 
+	display: none; 
+  }
+  
+
+  
+  
+  body {
+	background-image: url("loop_image1.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100%;
+	color: cyan;
+	animation-name: loop_image;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
 }
+  
+  
+  
 #buttom{
         
 		clear: both;
@@ -21,4 +41,47 @@
 #uniforms{
 	      clear: both;
 		  
+}
+  
+  @keyframes loop_image {
+	0% {
+	  background-image: url("loop_image1.png");
+	}
+	30% {
+	  background-image: url("loop_image2.png");
+	}
+	50% {
+	  background-image: url("loop_image3.png");
+	}
+	75% {
+	  background-image: url("loop_image4.png");
+	}
+	100% {
+	  background-image: url("loop_image5.png");
+	}
+	
+  }
+  
+.navigation{
+  overflow: hidden;
+  background-color: cyan;
+}
+/* modify the links of the hotbar */
+.navigation a {
+  float: left;
+  color: purple;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* change the color when touch */
+.navigation a:hover {
+  background-color: white;
+  color: black;
+}
+/* add color of the home link */
+.navigation a.current {
+  background-color: black;
+  color: #90ee90;
 }
