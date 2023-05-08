@@ -1,0 +1,148 @@
+/* modify the style of the video */
+#video-container{  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/*styling the header of the website*/
+.site_header .contain{
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-style: italic;
+  display: flex;
+  
+}
+
+
+/*create an area for prediction button*/
+.button_container{
+  background-color: transparent;
+  padding: 50px;
+  text-align: center;
+  height: 80%;
+}
+/*styling the button*/
+.button_container .button{
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  width: auto;
+  position: relative;
+  top: 250px;
+
+}
+
+/* modify the style of the text */
+#background{
+	position: relative;
+  height: 60%;
+  justify-content: flex-start;
+	font-size: 150%;
+	color: yellow;
+  background-color:black;
+  width: 100%;
+  opacity: 0.8;
+  text-align: left;
+  margin: 0 auto;
+
+}
+
+#information{
+  position: relative;
+  height: 50%;
+  justify-content: flex-start;
+	font-size: 150%;
+	color: yellow;
+  background-color:black;
+  width: 100%;
+  opacity: 0.8;
+  text-align: left;
+  margin: 0 auto;
+
+}
+
+#background img{
+  width: 20%;
+  height: 60%;
+  
+}
+
+/* setting the style of the text */
+#body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*building the  collapsed bar */
+.bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* styling text in the collapsed bar*/
+.bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+/*define color when the click near the text in collapsed bar*/
+.bar a:hover {
+  color: #f1f1f1;
+}
+/*define the location and style of text*/ 
+.bar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*building the openbutton(shown in the website)*/
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: cyan;
+  color: purple;
+  padding: 10px 15px;
+  border: none;
+}
+/*color changing when mouse near the button*/
+.openbtn:hover {
+  background-color: green;
+}
+/*modify the button*/
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+	
+
+
+
+
+
