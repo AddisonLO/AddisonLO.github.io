@@ -1,0 +1,17 @@
+#viz1683713852786{
+    left: 20%;
+    right: 20%;
+
+}
+
+#name{
+   color:darkturquoise;
+}
+
+#description{
+    color:lightskyblue;
+}
+
+body{
+   background-image: url("beach.jpg"); 
+}
