@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>AQHI checking</title>
+    <link rel="stylesheet" type="text/css" href="Recommendation.css">
+</head>
+<body>
+    <h1 align="center">AQHI checking</h1>
+    <br>
+
+    <div class='tableauPlaceholder' id='viz1684066223423' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_16838740187880&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='Book2_16838740187880&#47;Dashboard1' /><param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_16838740187880&#47;Dashboard1&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1684066223423');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    
+    if ( divElement.offsetWidth > 800 ) { 
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+        else if ( divElement.offsetWidth > 500 ) { 
+            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+        else { 
+            vizElement.style.width='100%';vizElement.style.height='977px';}                     
+            
+        var scriptElement = document.createElement('script');  
+
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                            
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+    <div id="information_container">
+        <h1><b>Why is AQHI important for personal health?</b></h1>
+        <br>
+        <p>Ans: AQHI provides a measure of the potential health risks associated with exposure to air pollution and it will provide a single number that represents the overall air quality and associated health risk.</p>
+        <br>
+        <br>
+        <h1><b>What happens if we expose ourselves to air pollutants for a long time?</b></h1>
+        <p>Some problems will occur:</p>
+        <br>
+        <p>1.Respiratory problems: Long-term exposure to air pollutants, such as fine particulate matter and nitrogen dioxide, can cause respiratory problems such as chronic bronchitis, asthma, and reduced lung function</p>
+        <br>
+        <p>2.Cardiovascular problems: Air pollution exposure has been linked to an increased risk of cardiovascular problems, such as heart attacks and strokes because the pollutants can enter the bloodstream and cause inflammation and damage to the heart and blood vessels.</p>
+        <br>
+        <p>3.Cancer: Exposure to certain air pollutants, such as benzene and polycyclic aromatic hydrocarbons, has been linked to an increased risk of cancer.</p>
+        <br>
+        <p>
+            We can give you some advices according to your age group now:
+        </p>
+        Your age: <!-- Age -->
+        <input type="radio" name="age_group" value="1" checked="checked" /> Teenagers or lower (Age 17 or younger)
+        <input type="radio" name="age_group" value="2" /> Adult (Age 18 or older)
+        <input type="radio" name="age_group" value="3" /> Elders (Age 65 or older)
+        <script>
+            const ageGroupRadios = document.querySelectorAll('input[name="age_group"]');
+            let selectedAgeGroup = null;
+
+            ageGroupRadios.forEach(function (radio) {
+                if (radio.checked) {
+                    selectedAgeGroup = radio.value;
+                }
+
+                radio.addEventListener('change', function () {
+                    selectedAgeGroup = this.value;
+                    switch (selectedAgeGroup) {
+                        case '1':
+                            alert("When the AQHI index is higher than 8, try to stay indoor to prevent inhaling too much pollutant. These pollutants in the air will hurt your respiratory system, making you suffer if you seldom do exercise.");
+                            break;
+                        case '2':
+                            alert("It should be fine for you to stay outside even the AQHI index is 10+. However, if you have any respiratory disease like asthma, please make sure to stay indoor when the AQHI index is high than 8");
+                            alert("OR YOU WILL HAVE A VERY BAD TIME.");
+                            break;
+                        case '3':
+                            alert("Even you don't have any disease, we advice you to stay at home or any indoor place whether the AQHI index is higher than 6.");
+                            alert("You may find out hard to breathe, but as long as you stay indoor, you should be fine.")
+                            break;
+                    }
+                });
+            });
+        </script>
+        <br />
+
+    </div>
+
+    
+
+</body>
+</html>
